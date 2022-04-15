@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal SPA | Single Page Application using Vanilla Js</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><a onclick="route()" href="/"> Minimal SPA</a></h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a onclick="route()" href="/" class="nav-item">Home</a></li>
+          <li><a onclick="route()" href="/about" class="nav-item">About</a></li>
+          <li>
+            <a onclick="route()" href="/contact" class="nav-item">Contact</a>
+          </li>
+          <li>
+            <span class="social-icon">
+              <a href="https://twitter.com/SreeharshR" role="button">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </span>
+            <span class="social-icon">
+              <a href="https://github.com/sreeharshrajan" role="button">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <footer>
+      <span>
+        <a href="https://github.com/sreeharshrajan" role="button">
+          Sreharsh Rajan
+        </a>
+        © 2022</span
+      >
+    </footer>
+    <main>
+      <div class="app" id="app"></div>
+    </main>
+    <script src="./router.js" defer></script>
+  </body>
+</html>
